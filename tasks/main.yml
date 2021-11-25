@@ -1,30 +1,29 @@
 ---
+- name: Install chrony
+  package:
+    name:
+      - chrony
+    state: present
 
- - name: Install chrony
-   package:
-     name:
-       - chrony
-     state: present
+- name: setup client ntp chronyd config
+  ansible.builtin.template:
+    src: templates/chrony.conf.j2
+    dest: /etc/chrony.conf
+    owner: root
+    group: root
+    mode: '0644'
 
- - name: setup client ntp chronyd config
-   ansible.builtin.template:
-     src: templates/chrony.conf.j2
-     dest: /etc/chrony.conf
-     owner: root
-     group: root
-     mode: '0644'
+- name: restart of chronyd
+  ansible.builtin.service:
+    name: chronyd
+    enabled: yes
 
- - name: restart of chronyd
-   ansible.builtin.service:
-     name: chronyd
-     enabled: yes
+- name: enable of chronyd
+  ansible.builtin.service:
+    name: chronyd
+    state: started
 
- - name: enable of chronyd
-   ansible.builtin.service:
-     name: chronyd
-     state: started
-
- - name: enable of chronyd
-   ansible.builtin.service:
-     name: chronyd
-     state: restarted
+- name: enable of chronyd
+  ansible.builtin.service:
+    name: chronyd
+    state: restarted
