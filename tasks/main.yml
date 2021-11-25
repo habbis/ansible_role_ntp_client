@@ -1,4 +1,8 @@
 ---
+- name: apt update for debian/ubuntu
+  apt:
+    update_cache: yes
+
 - name: Install chrony
   package:
     name:
