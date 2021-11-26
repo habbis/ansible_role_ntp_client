@@ -44,7 +44,7 @@ jobs:
           - centos8
           #- ubi8
           - ubuntu2004
-          - debian11
+          #- debian11
 
     steps:
       - name: Check out the codebase.
