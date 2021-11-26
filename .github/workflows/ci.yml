@@ -40,7 +40,8 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        distro:
+        #distro:
+        include:
           - distro: centos8
             playbook: converge.yml
           #- ubi8
