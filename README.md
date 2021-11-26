@@ -1,7 +1,7 @@
 ntp_client
 =========
 
-My ansible role setup chrony ntp server.
+My ansible role setup chrony ntp client.
 
 
 Example site.yml
