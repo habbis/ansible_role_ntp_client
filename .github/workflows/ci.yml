@@ -8,9 +8,6 @@ name: CI
   schedule:
     - cron: "0 1 * * 5"
 
-  env:
-    repo: ansible_role_ntp_client
-
 defaults:
   run:
     working-directory: 'ansible_role_ntp_client'
@@ -24,7 +21,7 @@ jobs:
       - name: Check out the codebase.
         uses: actions/checkout@v2
         with:
-          path: ${{ env.repo }}
+          path: ansible_role_ntp_client
 
       - name: Set up Python 3.
         uses: actions/setup-python@v2
@@ -57,7 +54,7 @@ jobs:
       - name: Check out the codebase.
         uses: actions/checkout@v2
         with:
-          path: ${{ env.repo }}
+          path: ansible_role_ntp_client
 
       - name: Set up Python 3.
         uses: actions/setup-python@v2
