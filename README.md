@@ -1,6 +1,9 @@
 ntp_client
 =========
 
+[![CI](https://github.com/habbis/ntp_client/workflows/CI/badge.svg)](https://github.com/habbis/ntp_client/actions?query=workflow%3ACI)
+
+
 My ansible role setup chrony ntp client.
 
 
