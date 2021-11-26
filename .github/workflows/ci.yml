@@ -9,7 +9,7 @@ name: CI
     - cron: "0 1 * * 5"
 
 defaults:
-  #run:
+  run:
 #    working-directory: 'ansible_role_ntp_client'
 
 jobs:
