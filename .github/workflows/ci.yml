@@ -9,9 +9,9 @@ name: CI
     - cron: "0 1 * * 5"
 
 defaults:
-  run:
+  #run:
     #working-directory: ${{ github.repository }}
-    path: ${{ github.repository }}
+    #path: ${{ github.repository }}
 
 jobs:
 
