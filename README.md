@@ -1,7 +1,7 @@
-ntp_client
+ansible_role_ntp_client
 =========
 
-[![CI](https://github.com/habbis/ntp_client/workflows/CI/badge.svg)](https://github.com/habbis/ntp_client/actions?query=workflow%3ACI)
+[![CI](https://github.com/habbis/ansible_role_ntp_client/workflows/CI/badge.svg)](https://github.com/habbis/ansible_role_ntp_client/actions?query=workflow%3ACI)
 
 
 My ansible role setup chrony ntp client.
@@ -25,5 +25,5 @@ Example site.yml
     #-  defaults/secrets.yml
 
   roles:
-    - { role: ../ntp_client }
+    - { role: ../ansible_role_ntp_client }
 ```
