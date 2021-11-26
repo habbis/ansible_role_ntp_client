@@ -8,7 +8,7 @@ name: CI
   schedule:
     - cron: "0 1 * * 5"
 
-#defaults:
+defaults:
   #run:
 #    working-directory: 'ansible_role_ntp_client'
 
