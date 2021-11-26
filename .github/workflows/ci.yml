@@ -41,10 +41,13 @@ jobs:
     strategy:
       matrix:
         distro:
-          - centos8
+          - distro: centos8
+            playbook: converge.yml
           #- ubi8
-          - ubuntu2004
-          #- debian11
+          - distro: ubuntu2004
+            playbook: converge.yml
+          - distro: debian11
+            playbook: converge.yml
 
     steps:
       - name: Check out the codebase.
