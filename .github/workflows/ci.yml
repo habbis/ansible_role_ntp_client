@@ -10,13 +10,18 @@ name: CI
 
 defaults:
   run:
+    working-directory: 'ntp_client'
+
+jobs:
+
+  lint:
     name: Lint
     runs-on: ubuntu-latest
     steps:
       - name: Check out the codebase.
         uses: actions/checkout@v2
         with:
-          path: ${{ github.repository }}
+          path: 'ntp_client'
 
       - name: Set up Python 3.
         uses: actions/setup-python@v2
@@ -49,7 +54,7 @@ defaults:
       - name: Check out the codebase.
         uses: actions/checkout@v2
         with:
-          path: ${{ github.repository }}
+          path: 'ntp_client'
 
       - name: Set up Python 3.
         uses: actions/setup-python@v2
