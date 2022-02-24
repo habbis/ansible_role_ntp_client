@@ -42,7 +42,7 @@ jobs:
       matrix:
         #distro:
         include:
-          - distro: centos8
+          - distro: rockylinux8
             playbook: converge.yml
           #- ubi8
           - distro: ubuntu2004
